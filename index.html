@@ -17,6 +17,24 @@
     .hero-section h1 {
       font-weight: 800;
     }
+    .service-box {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      position: relative;
+      z-index: 1;
+    }
+    .service-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
   </style>
 </head>
 <body id="page-top">
@@ -58,19 +76,25 @@
 </section>
 
 <!-- Layanan -->
-<section class="bg-light py-5" id="services">
+<section id="services">
   <div class="container">
     <h2 class="text-center mb-4">Layanan Kami</h2>
-    <div class="row text-center">
-      <div class="col-md-4">
+  </div>
+  <div class="row g-0">
+    <div class="col-md-4">
+      <div class="service-box text-center" style="background-image: url('assets/img/pmcheck.jpg');">
         <h5>PM Check</h5>
         <p>Uji kelayakan kendaraan menggunakan peralatan terkalibrasi dari ACTIA MULLER & CAPELEC, termasuk Axle Play Detector, Smoke Tester, Brake Tester, dll.</p>
       </div>
-      <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <div class="service-box text-center" style="background-image: url('assets/img/generalrepair.jpg');">
         <h5>General Repair</h5>
         <p>Perbaikan menyeluruh pada mesin, transmisi, kelistrikan, sistem pengereman, suspensi dan lainnya.</p>
       </div>
-      <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+      <div class="service-box text-center" style="background-image: url('assets/img/preventive.jpg');">
         <h5>Preventive Maintenance</h5>
         <p>Perawatan berkala dengan inspeksi teknis dan penggantian part rutin untuk memperpanjang umur kendaraan.</p>
       </div>
@@ -130,4 +154,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
