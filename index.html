@@ -4,157 +4,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>PT. Central Cintra Nusantara</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    .hero-section {
-      background: url('assets/img/header-bg.png') no-repeat center center;
-      background-size: cover;
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+    .product-list li {
+      font-size: 1.1rem;
+      padding: 8px 0;
+    }
+    .product-section {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+    .project-section {
+      background: url('assets/img/project-bg.jpg') no-repeat center center/cover;
       color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-      padding: 100px 0;
+      padding: 80px 0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
     }
-    .hero-section h1 {
-      font-weight: 800;
-    }
-    .service-box {
-      background-size: cover;
-      background-position: center;
-      color: white;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 20px;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    .service-box::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      z-index: -1;
+    .project-section .container {
+      background-color: rgba(0,0,0,0.6);
+      padding: 40px;
+      border-radius: 10px;
     }
   </style>
 </head>
-<body id="page-top">
+<body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#page-top">Central Cintra Nusantara</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-        <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-        <li class="nav-item"><a class="nav-link" href="#products">Produk</a></li>
-        <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero -->
-<header class="hero-section text-center">
-  <div class="container">
-    <h1 class="display-4">PT. Central Cintra Nusantara</h1>
-    <p class="lead">Bengkel & Layanan Profesional untuk Area Tambang</p>
-    <p>Menyediakan layanan Refurbishment unit, perawatan kendaraan, distribusi ban, suku cadang, serta aksesori kendaraan, termasuk layanan Body Repair untuk PT. Freeport Indonesia dan para kontraktor tambang.</p>
-  </div>
-</header>
-
-<!-- Tentang Kami -->
-<section class="py-5" id="about">
-  <div class="container">
-    <h2 class="text-center mb-4">Tentang Perusahaan</h2>
-    <p>Didirikan pada 4 Juni 2008, PT. Central Cintra Nusantara (CCN) berkantor pusat di Jakarta dan memiliki cabang di Kuala Kencana, Timika - Papua. Kami bergerak di bidang perbengkelan otomotif, khusus untuk kendaraan operasional tambang milik PT. Freeport Indonesia (PTFI) dan kontraktor di area tambang. Layanan utama meliputi PM Check, General Repair, Body Repair & Painting, dan Preventive Maintenance.</p>
-  </div>
-</section>
-
-<!-- Layanan -->
-<section id="services">
-  <div class="container">
-    <h2 class="text-center mb-4">Layanan Kami</h2>
-  </div>
-  <div class="row g-0">
-    <div class="col-md-4">
-      <div class="service-box" style="background-image: url('assets/img/pmcheck.jpg');">
-        <h5>PM Check</h5>
-        <p>Uji kelayakan kendaraan menggunakan peralatan terkalibrasi dari ACTIA MULLER & CAPELEC, termasuk Axle Play Detector, Smoke Tester, Brake Tester, dll.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service-box" style="background-image: url('assets/img/generalrepair.jpg');">
-        <h5>General Repair</h5>
-        <p>Perbaikan menyeluruh pada mesin, transmisi, kelistrikan, sistem pengereman, suspensi dan lainnya.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service-box" style="background-image: url('assets/img/preventive.jpg');">
-        <h5>Preventive Maintenance</h5>
-        <p>Perawatan berkala dengan inspeksi teknis dan penggantian part rutin untuk memperpanjang umur kendaraan.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Produk -->
-<section class="py-5" id="products">
-  <div class="container">
-    <h2 class="text-center mb-4">Produk Kami</h2>
-    <ul>
-      <li>Ban LV dan Heavy Duty (Savero, GT Radial, Komodo, dll)</li>
+<!-- Produk Kami -->
+<section class="product-section" id="products">
+  <div class="container text-center">
+    <h2 class="section-title">Produk Kami</h2>
+    <ul class="list-unstyled product-list text-start mx-auto" style="max-width: 600px;">
+      <li>Ban LV dan Heavy Duty <span class="text-muted">(Savero, GT Radial, Komodo, dll)</span></li>
       <li>LED Flood Light, LED Bar, Kamera Mundur IP67</li>
       <li>Seatbelt Reminder, Internal Radio Communication</li>
-      <li>Tools & Diagnostic Equipment (G-Scan, Jonnesway Tool Set)</li>
+      <li>Tools & Diagnostic Equipment <span class="text-muted">(G-Scan, Jonnesway Tool Set)</span></li>
     </ul>
   </div>
 </section>
 
-<!-- Proyek -->
-<section class="bg-light py-5" id="projects">
-  <div class="container">
-    <h2 class="text-center mb-4">Proyek Kami</h2>
-    <p class="text-center">CCN dipercaya PTFI sejak 2011 untuk menangani PM Check, Maintenance unit Hino & Isuzu, Refurbish IVECO, Repair Seatbelt & Truck Body, serta Rebuilt Injector Project.</p>
+<!-- Proyek Kami -->
+<section class="project-section" id="projects">
+  <div class="container text-center">
+    <h2 class="section-title text-white">Proyek Kami</h2>
+    <p class="lead">PT. Central Cintra Nusantara telah dipercaya oleh PT. Freeport Indonesia sejak tahun 2011 untuk menangani layanan PM Check, perawatan unit Hino & Isuzu, Refurbishment kendaraan IVECO, perbaikan sistem seatbelt & body kendaraan tambang, serta proyek Rebuilt Injector.</p>
   </div>
 </section>
-
-<!-- Kontak -->
-<section class="py-5" id="contact">
-  <div class="container">
-    <h2 class="text-center mb-4">Kontak Kami</h2>
-    <div class="row text-center">
-      <div class="col-md-4">
-        <h5>Alamat</h5>
-        <p>Lokasi Workshop: LIP Area, Kuala Kencana, Timika – Papua</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Email</h5>
-        <p>info@ccnusantara.co.id</p>
-      </div>
-      <div class="col-md-4">
-        <h5>Telepon</h5>
-        <p>+62-822-8704-4061</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <div class="container">
-    &copy; 2025 PT. Central Cintra Nusantara. All rights reserved.
-  </div>
-</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
